@@ -1,26 +1,46 @@
-# Merge and Remove Duplicates from Text Files
-This Rust project merges multiple text files in a directory and removes any duplicate and empty lines from the resulting file. It's designed to handle large files efficiently using multithreading and provides progress bars for each operation, giving a real-time estimate of the remaining time.
+# Merge and Remove Duplicates in Text Files
 
-Features
-Merges all .txt files in the specified directory (defaults to the script's directory)
-Removes duplicate lines and empty lines
-Utilizes multithreading for better performance on large files
-Provides progress bars for file processing and writing the output file
-Displays the estimated remaining time for each operation
-Usage
-Install Rust if you haven't already.
-Clone this repository:
-git clone https://github.com/your_username/merge_remove_duplicates.git
-Change to the project directory:
-cd merge_remove_duplicates
-uild the project:
-cargo build --release
-./target/release/merge_remove_duplicates /path/to/your/text/files
+This is a simple command-line tool for merging multiple text files and removing duplicate lines. It's written in Rust and uses the Rayon library for multi-threading.
 
-The merged and deduplicated file will be created in the same directory as the input files, with the name merged_deduped.txt.
+## Features
 
-Contributing
-Contributions are welcome! Please feel free to submit a pull request or create an issue for any enhancements or bug fixes.
+- Merges multiple text files into one.
+- Removes duplicate lines from the merged file.
+- Supports multi-threading for faster performance.
+- Shows progress bars for every operation, with estimated remaining time.
+- Removes empty lines from the input files.
+- Works on any platform where Rust is supported.
 
-License
-This project is licensed under the MIT License.
+## Usage
+
+To run the tool, navigate to the directory containing the text files you want to merge, then run the following command:
+
+$ merge_remove_duplicates
+
+
+By default, the tool will merge all the .txt files in the current directory. You can specify a different directory as the first argument:
+
+
+$ merge_remove_duplicates /path/to/text/files
+
+
+The tool will merge all the .txt files in the specified directory.
+
+## Installation
+
+To install the tool, you need to have Rust installed on your system. You can install Rust by following the instructions on the [official Rust website](https://www.rust-lang.org/tools/install).
+
+Once you have Rust installed, you can install the tool using Cargo, Rust's package manager:
+
+$ cargo install merge_remove_duplicates
+
+
+This will download the tool from the [crates.io](https://crates.io/crates/merge_remove_duplicates) repository and install it on your system.
+
+## License
+
+This tool is released under the [MIT License](https://opensource.org/licenses/MIT).
+
+## Contributing
+
+If you find a bug or have a suggestion for a new feature, please open an issue on the [GitHub repository](https://github.com/yourusername/merge_remove_duplicates). Pull requests are also welcome!
