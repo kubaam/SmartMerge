@@ -15,13 +15,13 @@ This is a simple command-line tool for merging multiple text files and removing 
 
 To run the tool, navigate to the directory containing the text files you want to merge, then run the following command:
 
-$ merge_remove_duplicates
+```$ merge_remove_duplicates```
 
 
 By default, the tool will merge all the .txt files in the current directory. You can specify a different directory as the first argument:
 
 
-$ merge_remove_duplicates /path/to/text/files
+```$ merge_remove_duplicates /path/to/text/files```
 
 
 The tool will merge all the .txt files in the specified directory.
@@ -32,7 +32,7 @@ To install the tool, you need to have Rust installed on your system. You can ins
 
 Once you have Rust installed, you can install the tool using Cargo, Rust's package manager:
 
-$ cargo install merge_remove_duplicates
+```$ cargo install merge_remove_duplicates```
 
 
 This will download the tool from the [crates.io](https://crates.io/crates/merge_remove_duplicates) repository and install it on your system.
